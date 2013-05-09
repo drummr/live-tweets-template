@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Twitter Showdown</title>
+    <title>Finals Showdown</title>
     <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.3/mapbox.css" type="text/css" />
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -34,8 +34,8 @@
         </table>
         <a href="#" id="stop">Pause</a>
         <div id="about">
-            <h2>About this Site</h2>
-            <p>Follow two competing live Twitter feeds, one including tweets with the keyword 'play', and one with tweets that include the keyword 'work'. Find out which parts of the country are working hardest and which ones are having the most fun. </p>
+            <h2>Work? or Finals?</h2>
+            <p>This application monitors real time data from Twitter servers seeing which word is used more often, Finals or Play. The application also shows the user the location of the tweet and the twitter handle of the tweeter </p>
         </div>
     </div>
 
@@ -47,15 +47,15 @@
     
         // Specify the tweets and location / radius to search
         var tweets = [
-            'work',             // First term
+            'finals',             // First term
             'play',             // Second term
-            '39,-98,1500mi'     // search location and radius (lat,lon,radius)
+            '33,-101,1500mi'     // search location and radius (lat,lon,radius)
         ];
 
         mapbox.auto('map', 'examples.map-dg7cqh4z', function(map, tiledata) {
             map.centerzoom({
-                lat: 40,
-                lon: -80
+                lat: 33,
+                lon: -101
             }, 4);
 
             map.setZoomRange(2, 15);
